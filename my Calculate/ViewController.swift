@@ -12,14 +12,20 @@ class ViewController: UIViewController {
     //Implicit
     var intNumber1 = 0
     var intNumber2: Int = 0
+    var intAnswer: Int = 0
+    
+    
     var strNumber1 = ""
     var strNumber2: String = ""
+    var strAnswer: String = ""
     
     
-    
-    
+    // Initial View to Outlet
+    @IBOutlet weak var answerLabel: UILabel!
     @IBOutlet weak var num1TextField: UITextField!
     @IBOutlet weak var num2TextField: UITextField!
+    
+    // Initial View
     @IBAction func andwerButton(_ sender: Any) {
         
         strNumber1 = num1TextField.text!
@@ -31,20 +37,21 @@ class ViewController: UIViewController {
         print("strNumber1 ==> \(strNumber1)")
         print("strNumber2 ==> \(strNumber2)")
         
-        // Change Datatype
+        //Change Datatype
         intNumber1 = Int(strNumber1)!
         intNumber2 = Int(strNumber2)!
-        
         print("intNumber1 ==> \(intNumber1)")
         print("intNumber2 ==> \(intNumber2)")
+        
+        //Calculate
+        intAnswer = intNumber1 + intNumber2
+        print("intAnswer \(intAnswer)")
+        
+        
         
     } // answerButton
     
     
-    
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
