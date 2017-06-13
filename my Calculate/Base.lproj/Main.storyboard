@@ -67,6 +67,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="HAC-a8-A0m" secondAttribute="trailing" constant="94" id="mKd-eN-Tzo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="num1TextFiled" destination="T1J-S3-oTN" id="POp-Cf-0Ju"/>
+                        <outlet property="num2TextField" destination="O2b-mk-GVk" id="gcY-rD-GHR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
