@@ -31,8 +31,14 @@ class ViewController: UIViewController {
         print("strNumber1 ==> \(strNumber1)")
         print("strNumber2 ==> \(strNumber2)")
         
+        // Change Datatype
+        intNumber1 = Int(strNumber1)!
+        intNumber2 = Int(strNumber2)!
         
-    }
+        print("intNumber1 ==> \(intNumber1)")
+        print("intNumber2 ==> \(intNumber2)")
+        
+    } // answerButton
     
     
     
